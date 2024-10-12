@@ -153,7 +153,7 @@ Ver examples/ejemplo-dvc.md
 git checkout [version][nombre del archivo]
 
 # Ejemplo:
-git checkout HEAD~1 data/row/datos_creditos.csv
+git checkout HEAD~1 data/row/datos_creditos.csv.dvc. # Me recupera este archivo
 dvc checkout 
 
 
@@ -185,11 +185,14 @@ Una posibilidad generar modelos.
 Ver archivo examples/mlflow.md, tambien examples/ejemplos-mlflow.ipynb
 
 
-Despues de ejecutar, notar que se crea una carpeta mlflows dentro de examples.
+Despues de ejecutar (los 4 primeros bloques de código), notar que se crea una carpeta mlflows dentro de examples.
+
+```cd examples
+mlflow ui
+```
 Ir ahi en la consola y ejecutar el comando `mlflow ui`
 
 Notar como se han generado los resultados de la experimentación.
-
 
 
 Luego volver al codigo, y ejecutar "Kameans - K-=2"
